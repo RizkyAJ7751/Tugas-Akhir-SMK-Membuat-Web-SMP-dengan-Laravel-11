@@ -97,9 +97,7 @@ Package ini berisi:
 
 1. **smpit-bahrul-ulum-sahlaniyah/** - Folder project Laravel lengkap
 2. **tutorial_laragon_setup.md** - Tutorial lengkap konfigurasi dengan Laragon
-3. **testing_results.md** - Hasil testing website
-4. **todo.md** - Checklist development yang telah diselesaikan
-5. **README.md** - Dokumentasi project ini
+3. **README.md** - Dokumentasi project ini
 
 ## 🚀 Cara Instalasi
 
