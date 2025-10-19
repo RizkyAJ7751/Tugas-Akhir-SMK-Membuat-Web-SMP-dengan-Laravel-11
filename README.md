@@ -33,7 +33,7 @@ Website company profile untuk SMP IT Bahrul Ulum Sahlaniyah yang dibuat mengguna
 - **PHP Version**: 8.2+
 - **Node.js**: 20.x
 
-## 📁 Struktur Project
+## 📁 Struktur Project (Kurang Lebih)
 
 ```
 smpit-bahrul-ulum-sahlaniyah/
