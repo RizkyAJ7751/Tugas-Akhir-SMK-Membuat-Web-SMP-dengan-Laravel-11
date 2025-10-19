@@ -1546,7 +1546,7 @@ Semoga tutorial ini bermanfaat dan sukses dalam implementasinya. Selamat menggun
 
 ---
 
-**Penulis**: Manus AI**Tanggal Selesai**: 19 Agustus 2024**Versi**: 1.0**Status**: Complete
+**Penulis**: Rizky **Tanggal Selesai**: 19 Oktober 2025 **Status**: Complete
 
 *Tutorial ini dapat diupdate sesuai dengan perkembangan teknologi dan kebutuhan sekolah.*
 
