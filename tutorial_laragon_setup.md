@@ -154,7 +154,7 @@ npm --version
 
 Jika semua command di atas menampilkan versi yang sesuai, maka instalasi Laragon telah berhasil dan siap digunakan untuk development Laravel.
 
-## Konfigurasi Environment Laragon
+## 3. Konfigurasi Environment Laragon
 
 ### Mengatur Virtual Hosts
 
@@ -266,7 +266,7 @@ Untuk development yang membutuhkan HTTPS, Laragon menyediakan fitur SSL otomatis
 
 Dengan konfigurasi environment yang tepat, Laragon akan menjadi development environment yang powerful dan efisien untuk project Laravel Anda.
 
-## Setup Project Laravel di Laragon
+## 4. Setup Project Laravel di Laragon
 
 ### Menyiapkan Direktori Project
 
@@ -359,7 +359,7 @@ Jika website akan digunakan untuk production, jalankan perintah optimasi berikut
 
 Dengan setup yang tepat, project Laravel Anda sekarang siap berjalan di environment Laragon dengan performa yang optimal.
 
-## Konfigurasi Database
+## 5. Konfigurasi Database
 
 ### Setup Database MySQL
 
@@ -481,7 +481,7 @@ Masalah umum dan solusinya:
 
 Dengan konfigurasi database yang tepat, aplikasi Laravel Anda akan memiliki fondasi data yang solid dan performa yang optimal.
 
-## Deployment Website ke Laragon
+## 6. Deployment Website ke Laragon
 
 ### Finalisasi Konfigurasi Virtual Host
 
@@ -600,7 +600,7 @@ Sebelum website resmi digunakan:
 
 Dengan mengikuti semua langkah deployment ini, website SMP IT Bahrul Ulum Sahlaniyah akan berjalan optimal di environment Laragon dengan keamanan dan performa yang baik.
 
-## Testing dan Troubleshooting
+## 7. Testing dan Troubleshooting
 
 ### Comprehensive Testing Strategy
 
@@ -976,7 +976,7 @@ echo Backup completed: %TIMESTAMP%
 
 Dengan strategi testing dan troubleshooting yang komprehensif ini, Anda dapat memastikan website berjalan dengan optimal dan dapat mengatasi masalah yang mungkin timbul dengan cepat dan efektif.
 
-## Maintenance dan Update
+## 8. Maintenance dan Update
 
 ### Regular Maintenance Tasks
 
@@ -1356,7 +1356,7 @@ echo Recovery completed!
 pause
 ```
 
-## Kesimpulan
+## 9. Kesimpulan
 
 Tutorial ini telah memandu Anda melalui proses lengkap untuk mengkonfigurasi website company profile SMP IT Bahrul Ulum Sahlaniyah dengan Laragon. Dari instalasi awal hingga maintenance rutin, setiap aspek telah dibahas secara detail untuk memastikan website berjalan dengan optimal.
 
