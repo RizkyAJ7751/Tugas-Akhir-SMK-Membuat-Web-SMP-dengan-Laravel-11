@@ -26,7 +26,7 @@
 
 ---
 
-## Pendahuluan
+## 1. Pendahuluan
 
 Tutorial ini akan memandu Anda langkah demi langkah untuk mengkonfigurasi website company profile SMP IT Bahrul Ulum Sahlaniyah yang telah dibuat menggunakan Laravel 11 dan Tailwind CSS ke dalam environment Laragon. Laragon adalah development environment yang powerful dan mudah digunakan untuk Windows yang menyediakan Apache, Nginx, MySQL, PHP, Redis, Memcached, dan Node.js dalam satu paket yang terintegrasi.
 
@@ -54,7 +54,7 @@ Prasyarat yang diperlukan:
 
 - File project Laravel yang telah dibuat
 
-## Persiapan dan Instalasi Laragon
+## 2. Persiapan dan Instalasi Laragon
 
 ### Mengunduh Laragon
 
