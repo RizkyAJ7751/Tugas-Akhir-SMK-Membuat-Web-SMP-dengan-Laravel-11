@@ -36,41 +36,92 @@ Website company profile untuk SMP IT Bahrul Ulum Sahlaniyah yang dibuat mengguna
 ## 📁 Struktur Project (Kurang Lebih)
 
 ```
-smpit-bahrul-ulum-sahlaniyah/
-├── app/                          # Laravel application logic
-├── bootstrap/                    # Laravel bootstrap files
-├── config/                       # Configuration files
-├── database/                     # Database migrations and seeders
-├── public/                       # Public assets and entry point
-│   ├── build/                   # Compiled assets (CSS, JS)
-│   └── index.php               # Application entry point
-├── resources/                    # Views, CSS, JS source files
+Tugas-Akhir-SMK-Membuat-Web-SMP-dengan-Laravel-11/
+├── app/
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── Berita.php
+│   │   ├── Guru.php
+│   │   ├── KepalaSekolah.php
+│   │   ├── KontakMasuk.php
+│   │   ├── Program.php
+│   │   └── Stats.php
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Frontend/
+│   │   │   │   └── HomeController.php
+│   │   │   ├── Admin/
+│   │   │   │   ├── BeritaController.php
+│   │   │   │   ├── GuruController.php
+│   │   │   │   ├── KepalaSekolahController.php
+│   │   │   │   ├── KontakMasukController.php
+│   │   │   │   ├── ProgramController.php
+│   │   │   │   ├── StatsController.php
+│   │   │   │   └── FakeLoginController.php
+│   │   │   └── Auth/
+│   │   └── Middleware/
+│   └── Console/
+├── database/
+│   ├── migrations/
+│   │   ├── 0001_01_01_000000_create_users_table.php
+│   │   ├── 0001_01_01_000001_create_cache_table.php
+│   │   ├── 0001_01_01_000002_create_jobs_table.php
+│   │   ├── 2025_08_27_140503_create_stats_table.php
+│   │   ├── 2025_08_27_140517_create_kepala_sekolah_table.php
+│   │   ├── 2025_08_27_140533_create_guru_table.php
+│   │   ├── 2025_08_27_140552_create_berita_table.php
+│   │   ├── 2025_08_27_140612_create_kontak_masuk_table.php
+│   │   ├── 2025_09_01_014202_remove_gelar_from_kepala_sekolah_table.php
+│   │   ├── 2025_09_08_124102_create_fake_logins_table.php
+│   │   └── 2025_09_16_110200_create_programs_table.php
+│   ├── seeders/
+│   └── database.sqlite
+├── resources/
+│   ├── views/
+│   │   ├── components/
+│   │   │   ├── navbar.blade.php
+│   │   │   ├── hero.blade.php
+│   │   │   ├── about.blade.php
+│   │   │   ├── programs.blade.php
+│   │   │   ├── blog.blade.php
+│   │   │   ├── blog-index.blade.php
+│   │   │   ├── blog-show.blade.php
+│   │   │   ├── teachers.blade.php
+│   │   │   ├── teacher-index.blade.php
+│   │   │   ├── contact.blade.php
+│   │   │   └── footer.blade.php
+│   │   ├── layouts/
+│   │   │   ├── app.blade.php
+│   │   │   ├── admin.blade.php
+│   │   │   ├── guest.blade.php
+│   │   │   └── navigation.blade.php
+│   │   ├── admin/
+│   │   ├── auth/
+│   │   ├── profile/
+│   │   ├── dashboard.blade.php
+│   │   └── welcome.blade.php
 │   ├── css/
-│   │   └── app.css             # Main CSS file with Tailwind
-│   ├── js/
-│   │   └── app.js              # Main JavaScript file
-│   └── views/
-│       ├── components/          # Blade components (modular)
-│       │   ├── navbar.blade.php
-│       │   ├── hero.blade.php
-│       │   ├── about.blade.php
-│       │   ├── programs.blade.php
-│       │   ├── blog.blade.php
-│       │   ├── blog-index.blade.php
-│       │   ├── blog-show.blade.php
-│       │   ├── teachers.blade.php
-│       │   ├── teachers-index.blade.php
-│       │   ├── contact.blade.php
-│       │   └── footer.blade.php
-│       └── welcome.blade.php    # Main page template
-├── routes/                       # Route definitions
-├── storage/                      # Storage for logs, cache, etc.
-├── tests/                        # Test files
-├── .env                         # Environment configuration
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── tailwind.config.js           # Tailwind CSS configuration
-└── vite.config.js              # Vite build configuration
+│   │   └── app.css
+│   └── js/
+│       └── app.js
+├── routes/
+│   ├── web.php
+│   ├── auth.php
+│   └── console.php
+├── config/
+├── storage/
+├── public/
+│   └── build/ (compiled assets)
+├── tests/
+├── .env
+├── .env.example
+├── composer.json
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+├── phpunit.xml
+└── README.md
+
 ```
 
 ## 🎨 Desain dan Tema
