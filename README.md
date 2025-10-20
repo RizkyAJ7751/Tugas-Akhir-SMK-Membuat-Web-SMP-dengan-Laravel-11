@@ -217,6 +217,7 @@ theme: {
 - Security headers implementation
 - File permission yang tepat
 - Fake Login Page sebagai trap dan IP Finder dan Blocker
+- Halaman Login pada projek ini berada di /test
 
 ## 📈 Performance Optimization
 
