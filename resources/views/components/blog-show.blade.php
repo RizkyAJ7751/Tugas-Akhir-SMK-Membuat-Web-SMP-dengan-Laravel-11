@@ -28,7 +28,7 @@
         <div class="pt-6 mx-auto bg-gradient-to-r from-green-300 to-blue-600">
 
             <!-- Header Artikel -->
-            <header class="max-w-4xl px-3 py-6 mx-auto mb-10 text-center bg-white">
+            <header class="max-w-4xl px-3 py-6 mx-auto text-center bg-white">
                 <!-- Judul -->
                 <h1
                     class="mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight text-black font-['Roboto']">
@@ -44,32 +44,30 @@
                 </p>
             </header>
 
-
-
             <!-- Gambar Utama -->
             @if ($berita->gambar)
-                <div class="w-full px-6 pb-4 mb-10 overflow-hidden text-center shadow-lg bg-green-50">
+                <div class="w-full px-6 pb-4 overflow-hidden text-center shadow-lg bg-green-50">
                     <img src="{{ asset('storage/' . $berita->gambar) }}" alt="{{ $berita->judul }}"
-                        class=" w-3/4 max-w-4xl max-h-[480px] mx-auto block">
+                        class="block w-3/4 max-w-4xl max-h-full mx-auto">
                 </div>
             @endif
 
             <!-- Konten Artikel -->
-            <div class="w-full px-6 pb-4 mb-10 overflow-hidden bg-gray-50">
-                <article
-                    class="w-full max-w-4xl p-6 mx-auto leading-relaxed prose prose-lg text-black break-words bg-white shadow-xl md:w-1/2 md:p-8">
-                    {!! nl2br(e($berita->konten)) !!}
-                </article>
-            </div>
+                <div class="w-full px-6 pb-4 overflow-hidden bg-gray-50">
+                    <article
+                        class="w-full max-w-4xl p-6 mx-auto leading-relaxed prose prose-lg text-black break-words bg-white shadow-xl md:p-8">
+                        {!! nl2br(e($berita->konten)) !!}
+                    </article>
+                </div>
 
 
-            <!-- Tombol Kembali -->
-            <div class="p-6 mt-10 text-center bg-gray-100">
-                <a href="{{ route('berita.index') }}"
-                    class="inline-block px-6 py-3 font-semibold text-white transition bg-green-600 rounded-lg shadow hover:bg-green-700">
-                    ← Kembali ke Daftar Berita
-                </a>
-            </div>
+                <!-- Tombol Kembali -->
+                <div class="p-6 mt-10 text-center bg-gray-100">
+                    <a href="{{ route('berita.index') }}"
+                        class="inline-block px-6 py-3 font-semibold text-white transition bg-green-600 rounded-lg shadow hover:bg-green-700">
+                        ← Kembali ke Daftar Berita
+                    </a>
+                </div>
         </div>
     </section>
 
