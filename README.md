@@ -199,7 +199,7 @@ Package ini berisi:
    npm run build
    ```
    
-   7. **Jalankan Seeder**
+7. **Jalankan Seeder**
    ```bash
    php artisan db:seed
    ```
