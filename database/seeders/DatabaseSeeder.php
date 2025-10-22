@@ -13,11 +13,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // Buat user admin default
+        \App\Models\User::create([
+            'name' => 'Admin SMP Sahlaniyah',
+            'email' => 'Admin@smpsahlaniyah.sch.id',
+            'password' => \Illuminate\Support\Facades\Hash::make('AddMi1n_exxxaammple'),
+            'email_verified_at' => now(),
+        ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        // Buat user admin alternatif
+        \App\Models\User::create([
+            'name' => 'Administrator',
+            'email' => 'AAdministrator@smpsahlaniyah.sch.id',
+            'password' => \Illuminate\Support\Facades\Hash::make('aadMi1n_exxxaammple22'),
+            'email_verified_at' => now(),
         ]);
     }
 }
