@@ -198,8 +198,13 @@ Package ini berisi:
    ```bash
    npm run build
    ```
+   
+   7. **Jalankan Seeder**
+   ```bash
+   php artisan db:seed
+   ```
 
-7. **Jalankan server**
+8. **Jalankan server**
    ```bash
    php artisan serve
    ```
