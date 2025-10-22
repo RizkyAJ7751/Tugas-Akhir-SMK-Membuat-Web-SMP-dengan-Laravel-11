@@ -318,6 +318,12 @@ Website ini dibuat untuk SMP IT Bahrul Ulum Sahlaniyah dengan spesifikasi:
 - SEO-friendly
 - Performance optimized
 
+Catatan:
+
+## Cara Masuk ke Login Page  juga Mengetahui Email dan Password 
+- Untuk Login Page silahkan ke /test pada browser untuk masuk ke Login Page (Bisa dilihat di /Routes/Auth.php)
+- Untuk Email dan Passwordnya yakni Email Pertama Admin@smpsahlaniyah.sch.id dan Passwordnya AddMi1n_exxxaammple juga Email Kedua AAdministrator@smpsahlaniyah.sch.id lalu Passwordnya aadMi1n_exxxaammple22 (Bisa dilihat pada /database/seeders/DatabaseSeeders.php)
+
 Untuk pertanyaan atau support lebih lanjut, silakan merujuk ke dokumentasi yang disediakan atau hubungi developer.
 
 ---
