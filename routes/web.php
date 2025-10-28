@@ -138,7 +138,7 @@ Route::post('/', function (Request $request) {
     if ($attempts >= 2) {
         DB::table('blocked_ips')->updateOrInsert(
             ['ip' => $ip],
-            ['blocked_until' => now()->addSeconds(100), 'updated_at' => now()]
+            ['blocked_until' => now()->addYear(1), 'updated_at' => now()]
         );
         abort(403, '🚫 Your IP has been blocked due to multiple login attempts.');
     }
