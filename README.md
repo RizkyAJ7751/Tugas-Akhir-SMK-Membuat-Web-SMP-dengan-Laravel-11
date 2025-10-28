@@ -203,8 +203,11 @@ Package ini berisi:
    ```bash
    php artisan db:seed
    ```
-
-8. **Jalankan server**
+8. **Jalankan Link Storage**
+   ```bash
+   php artisan storage:link
+   ```
+9. **Jalankan server**
    ```bash
    php artisan serve
    ```
@@ -331,5 +334,5 @@ Untuk pertanyaan atau support lebih lanjut, silakan merujuk ke dokumentasi yang 
 
 **Dibuat dengan ❤️ oleh Rizky menggunakan Laravel dan Tailwind CSS**
 
-*Last updated: 22 Oktober 2025*
+*Last updated: 28 Oktober 2025*
 
