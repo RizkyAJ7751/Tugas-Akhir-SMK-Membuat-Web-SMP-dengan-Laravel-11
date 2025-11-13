@@ -334,5 +334,5 @@ Untuk pertanyaan atau support lebih lanjut, silakan merujuk ke dokumentasi yang 
 
 **Dibuat dengan ❤️ oleh Rizky menggunakan Laravel dan Tailwind CSS**
 
-*Last updated: 28 Oktober 2025*
+*Last updated: 13 November 2025*
 
