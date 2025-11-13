@@ -54,7 +54,7 @@
                     </div>
                     <div class="ml-4">
                         <p class="text-sm font-medium text-gray-600">Kepala Sekolah</p>
-                        <p class="text-2xl font-semibold text-gray-900">{{ \App\Models\KepalaSekolah::count() }}</p>
+                        <p class="text-2xl font-semibold text-gray-900">{{ \App\Models\KepalaSekolah::count() == 1 ? 'Aktif' : 'Kosong' }}</p>
                     </div>
                 </div>
             </div>
