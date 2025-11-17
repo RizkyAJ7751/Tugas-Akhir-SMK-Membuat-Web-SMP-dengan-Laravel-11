@@ -90,16 +90,4 @@
         mobileMenu.classList.toggle('hidden');
     });
 
-    // Navbar scroll effect dengan kondisi 630px
-
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('nav');
-        if (window.scrollY > 0) {
-            navbar.classList.add('backdrop-blur-md', 'bg-gradient-green/95');
-            navbar.classList.remove('bg-gradient-green');
-        } else {
-            navbar.classList.remove('backdrop-blur-md', 'bg-gradient-green/95');
-            navbar.classList.add('bg-gradient-green');
-        }
-    });
 </script>
