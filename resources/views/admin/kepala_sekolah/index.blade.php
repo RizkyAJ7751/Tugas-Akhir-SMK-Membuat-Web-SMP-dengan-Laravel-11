@@ -45,11 +45,6 @@
                             </button>
                         </form>
                     @endif
-                    @if ($kepalaSekolah)
-                        <p></p>
-                    @else
-                        <p class="ml-2">Belum ada data kepala sekolah</p>
-                    @endif
                 </div>
             </div>
         </div>
