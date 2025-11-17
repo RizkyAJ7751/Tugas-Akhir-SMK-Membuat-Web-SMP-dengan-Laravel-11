@@ -17,7 +17,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gradient-to-r from-blue-100 to-pink-100">
+<body class="bg-gradient-to-r from-blue-100 to-green-100">
 
     @include('components.navbar-non-landing-page')
 
