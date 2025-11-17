@@ -59,7 +59,7 @@
                             Tenaga Pengajar
                         </label>
                         <input type="number" name="tenaga_pengajar" id="tenaga_pengajar"
-                            value="{{ old('tenaga_pengajar', $stats->tenaga_pengajar) }}" min="0"
+                            value="{{ \App\Models\Guru::count() }}" min="0"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors @error('tenaga_pengajar') border-red-500 @enderror"
                             placeholder="Contoh: 25">
                         @error('tenaga_pengajar')
