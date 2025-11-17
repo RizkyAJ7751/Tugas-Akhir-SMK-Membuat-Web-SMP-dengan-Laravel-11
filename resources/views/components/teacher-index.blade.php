@@ -17,7 +17,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gradient-to-r from-blue-100 to-green-100">
+<body class="">
 
     @include('components.navbar-non-landing-page')
 
@@ -40,7 +40,7 @@
             @forelse($gurus as $guru)
                 <!-- Guru Card -->
                 <div
-                    class="p-6 text-center transition-all duration-300 bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-105">
+                    class="border p-6 text-center transition-all duration-300 bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-105">
                     <div
                         class="flex items-center justify-center w-24 h-24 mx-auto mb-4 overflow-hidden bg-gray-200 rounded-full">
                         <img src="{{ $guru->foto ? asset('storage/'.$guru->foto) : asset('images/default.png') }}" alt="{{ $guru->nama }}" class="object-cover w-full h-full">
