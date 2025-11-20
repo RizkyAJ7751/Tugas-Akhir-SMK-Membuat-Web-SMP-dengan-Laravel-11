@@ -1,5 +1,5 @@
-<nav id="navbar" class="fixed top-0 z-50 w-full transition-all duration-300 shadow-lg bg-gradient-green">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<nav id="navbar" class="px-6 fixed top-0 z-50 w-full transition-all duration-300 shadow-lg bg-gradient-green">
+    <div class="px-4 mx-auto max-w-auto sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
             <!-- Logo dan Nama Sekolah -->
             <div class="flex items-center space-x-4">
