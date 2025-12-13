@@ -40,7 +40,6 @@ class ProgramController extends Controller
         $request->validate([
             'title'       => 'required|string|max:255',
             'description' => 'nullable|string',
-            'gelombang'   => 'required|in:1,2,3',
             'brosur.*'    => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
@@ -55,7 +54,6 @@ class ProgramController extends Controller
         Program::create([
             'title'       => $request->title,
             'description' => $request->description,
-            'gelombang'   => $request->gelombang,
             'brosur'      => $brosurPaths,
         ]);
 
