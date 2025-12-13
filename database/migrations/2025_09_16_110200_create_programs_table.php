@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('title'); // Judul program
             $table->text('description')->nullable(); // Deskripsi program
-            $table->enum('gelombang', ['1', '2', '3']); // Gelombang ditentukan sekolah
             $table->json('brosur')->nullable(); // Menyimpan array path gambar brosur (max 5)
             $table->timestamps();
         });
