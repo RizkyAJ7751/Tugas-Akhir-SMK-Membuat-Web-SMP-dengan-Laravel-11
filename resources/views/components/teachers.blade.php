@@ -48,17 +48,21 @@
         <!-- Grid Guru -->
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" id="daftar-guru">
             @forelse($gurus as $guru)
-                <!-- Guru Card -->
-                <div
-                    class="p-6 text-center transition-all duration-300 bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-105">
-                    <div
-                        class="flex items-center justify-center w-24 h-24 mx-auto mb-4 overflow-hidden bg-gray-200 rounded-full">
-                        <img src="{{ $guru->foto ? asset('storage/'.$guru->foto) : asset('images/default.png') }}" alt="{{ $guru->nama }}" class="object-cover w-full h-full">
+            <!-- Guru Card (1:1 Aspect Ratio with Hover Overlay) -->
+                    <div class="relative overflow-hidden shadow-lg rounded-xl group aspect-square">
+                        <!-- Image -->
+                        <img src="{{ $guru->foto ? asset('storage/' . $guru->foto) : asset('images/default.png') }}"
+                            alt="{{ $guru->nama }}"
+                            class="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-105">
+
+                        <!-- Overlay (Information on Hover) -->
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center p-4 text-white transition-all duration-300 bg-black opacity-0 bg-opacity-70 group-hover:opacity-100">
+                            <h3 class="mb-2 text-lg font-bold text-center">{{ $guru->nama }}</h3>
+                            <p class="mb-1 text-sm font-semibold text-center">{{ $guru->bidang ?? '-' }}</p>
+                            <p class="text-xs text-center">{{ $guru->jabatan ?? '-' }}</p>
+                        </div>
                     </div>
-                    <h3 class="mb-2 text-lg font-bold text-gray-900">{{ $guru->nama }}</h3>
-                    <p class="mb-2 font-semibold text-secondary">{{ $guru->bidang ?? '-' }}</p>
-                    <p class="text-sm text-gray-600">{{ $guru->jabatan ?? '-' }}</p>
-                </div>
 
             @empty
                 <!-- Placeholder (kalau tidak ada guru di DB) -->
