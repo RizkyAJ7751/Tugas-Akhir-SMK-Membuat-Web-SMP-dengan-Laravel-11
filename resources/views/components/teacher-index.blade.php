@@ -15,6 +15,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="">
@@ -31,40 +32,45 @@
                     Daftar <span class="text-green-700"> Guru</span>
                 </h1>
                 <p class="max-w-2xl mx-auto text-lg text-gray-600">
-                    Ikuti perkembangan terbaru dan kegiatan-kegiatan menarik di
+                    Lihat tenaga pendidik yang mendampingi di
                     <span class="font-semibold text-green-700">SMP IT Bahrul Ulum Sahlaniyah</span>.
                 </p>
             </div>
 
-                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" id="daftar-guru">
-            @forelse($gurus as $guru)
-                <!-- Guru Card -->
-                <div
-                    class="border p-6 text-center transition-all duration-300 bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-105">
-                    <div
-                        class="flex items-center justify-center w-24 h-24 mx-auto mb-4 overflow-hidden bg-gray-200 rounded-full">
-                        <img src="{{ $guru->foto ? asset('storage/'.$guru->foto) : asset('images/default.png') }}" alt="{{ $guru->nama }}" class="object-cover w-full h-full">
-                    </div>
-                    <h3 class="mb-2 text-lg font-bold text-gray-900">{{ $guru->nama }}</h3>
-                    <p class="mb-2 font-semibold text-secondary">{{ $guru->bidang ?? '-' }}</p>
-                    <p class="text-sm text-gray-600">{{ $guru->jabatan ?? '-' }}</p>
-                </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="daftar-guru">
+                @forelse($gurus as $guru)
+                    <!-- Guru Card (1:1 Aspect Ratio with Hover Overlay) -->
+                    <div class="relative overflow-hidden shadow-lg rounded-xl group aspect-square">
+                        <!-- Image -->
+                        <img src="{{ $guru->foto ? asset('storage/' . $guru->foto) : asset('images/default.png') }}"
+                            alt="{{ $guru->nama }}"
+                            class="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-105">
 
-            @empty
-                <!-- Placeholder (kalau tidak ada guru di DB) -->
-                <div class="p-6 text-center bg-white shadow-lg rounded-xl">
-                    <div class="flex items-center justify-center w-24 h-24 mx-auto mb-4 bg-gray-200 rounded-full">
-                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                        </svg>
+                        <!-- Overlay (Information on Hover) -->
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center p-4 text-white transition-all duration-300 bg-black opacity-0 bg-opacity-70 group-hover:opacity-100">
+                            <h3 class="mb-2 text-lg font-bold text-center">{{ $guru->nama }}</h3>
+                            <p class="mb-1 text-sm font-semibold text-center">{{ $guru->bidang ?? '-' }}</p>
+                            <p class="text-xs text-center">{{ $guru->jabatan ?? '-' }}</p>
+                        </div>
                     </div>
-                    <h3 class="mb-2 text-lg font-bold text-gray-900">Data guru akan dimuat</h3>
-                    <p class="mb-2 font-semibold text-secondary">dari dashboard admin</p>
-                    <p class="text-sm text-gray-600">Bidang studi akan ditampilkan di sini</p>
-                </div>
-            @endforelse
-        </div>
+
+                @empty
+                    <!-- Placeholder (kalau tidak ada guru di DB) -->
+                    <div class="p-6 text-center bg-white shadow-lg rounded-xl">
+                        <div class="flex items-center justify-center w-24 h-24 mx-auto mb-4 bg-gray-200 rounded-full">
+                            <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-2 text-lg font-bold text-gray-900">Data guru akan dimuat</h3>
+                        <p class="mb-2 font-semibold text-secondary">dari dashboard admin</p>
+                        <p class="text-sm text-gray-600">Bidang studi akan ditampilkan di sini</p>
+                    </div>
+                @endforelse
+            </div>
 
             <!-- Pagination -->
             <div class="mt-12">
