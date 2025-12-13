@@ -26,7 +26,6 @@
                         <div class="flex items-center justify-between mb-4">
                             <div>
                                 <h3 class="text-lg font-semibold text-gray-900">{{ $program->title }}</h3>
-                                <p class="text-sm text-gray-600">Gelombang {{ $program->gelombang }}</p>
                             </div>
                             <div class="flex space-x-2">
                                 <!-- Tombol Hapus -->
@@ -79,3 +78,4 @@
         </div>
     </div>
 @endsection
+
