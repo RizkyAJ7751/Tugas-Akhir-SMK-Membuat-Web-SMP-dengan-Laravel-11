@@ -41,9 +41,6 @@
             <p class="max-w-3xl mx-auto text-base leading-relaxed text-gray-600 break-words md:text-lg">
                 {{ $mainProgram->description }}
             </p>
-            <span class="inline-block px-4 py-1 mt-3 text-sm font-semibold text-white rounded-full bg-secondary">
-                Gelombang {{ $mainProgram->gelombang }}
-            </span>
         </div>
     @endif
 
