@@ -35,19 +35,6 @@
                     class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none">{{ old('description') }}</textarea>
             </div>
 
-            <!-- Gelombang -->
-            <div>
-                <label class="block mb-1 font-medium text-gray-700">Gelombang *</label>
-                <select name="gelombang"
-                    class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
-                    required>
-                    <option value="">-- Pilih --</option>
-                    <option value="1" {{ old('gelombang') == '1' ? 'selected' : '' }}>Gelombang 1</option>
-                    <option value="2" {{ old('gelombang') == '2' ? 'selected' : '' }}>Gelombang 2</option>
-                    <option value="3" {{ old('gelombang') == '3' ? 'selected' : '' }}>Gelombang 3</option>
-                </select>
-            </div>
-
             <!-- Upload Brosur -->
             <div class="grid gap-6 md:grid-cols-2">
                 @for ($i = 1; $i <= 5; $i++)
