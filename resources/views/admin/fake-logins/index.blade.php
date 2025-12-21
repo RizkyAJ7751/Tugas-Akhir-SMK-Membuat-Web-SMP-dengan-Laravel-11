@@ -1,3 +1,6 @@
+<!-- Script -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 @extends('layouts.admin') {{-- layout dashboard kamu --}}
 
 @section('title', 'Percobaan Login Palsu')
@@ -39,3 +42,4 @@
     </div>
 </div>
 @endsection
+
