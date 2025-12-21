@@ -1,3 +1,6 @@
+<!-- Script -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 <nav id="navbar" class="px-6 sticky top-0 z-50 w-full transition-all duration-300 shadow-lg bg-gradient-green">
     <div class="px-4 mx-auto max-w-auto sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
