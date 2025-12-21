@@ -1,3 +1,4 @@
+<script src="https://cdn.tailwindcss.com"></script>
 @extends('layouts.admin')
 
 @section('title', 'Dashboard Admin')
