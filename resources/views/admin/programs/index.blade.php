@@ -1,3 +1,6 @@
+<!-- Script -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 @extends('layouts.admin')
 
 @section('content')
@@ -78,4 +81,5 @@
         </div>
     </div>
 @endsection
+
 
