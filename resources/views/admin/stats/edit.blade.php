@@ -1,3 +1,6 @@
+<!-- Script -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 @extends('layouts.admin')
 
 @section('title', 'Edit Statistik')
