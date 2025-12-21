@@ -1,3 +1,6 @@
+<!-- Script -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 @extends('layouts.admin')
 
 @section('title', 'Detail Pesan')
@@ -43,3 +46,4 @@
         </div>
     </div>
 @endsection
+
