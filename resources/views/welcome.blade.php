@@ -10,7 +10,7 @@
         content="SMP IT Bahrul Ulum Sahlaniyah adalah sekolah Islam terpadu yang mengintegrasikan pendidikan akademik berkualitas dengan nilai-nilai Islam.">
     <meta name="keywords"
         content="SMP IT, Sekolah Islam Terpadu, Bahrul Ulum Sahlaniyah, Pendidikan Islam, Sekolah Menengah Pertama">
-
+    <script src="https://cdn.tailwindcss.com"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <style>
