@@ -1,3 +1,6 @@
+<!-- Script -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 <section id="teachers" class="py-20 bg-gray-50">
     <div class="px-4 py-6 mx-auto bg-gray-100 max-w-7xl sm:px-6 lg:px-8">
         <!-- Section Header -->
