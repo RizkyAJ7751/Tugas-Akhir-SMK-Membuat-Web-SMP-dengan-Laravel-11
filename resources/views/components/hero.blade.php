@@ -1,3 +1,6 @@
+<!-- Script -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 <section id="home" class="relative flex items-center justify-center min-h-screen py-4 overflow-hidden">
     <!-- Background Image dengan Overlay -->
     <div class="absolute inset-0 z-0">
